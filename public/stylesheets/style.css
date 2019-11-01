@@ -1,0 +1,23 @@
+
+header{
+    height:42px;
+    position:sticky;
+    padding: 10px;
+    background: #6c18bc;
+    margin-top:0px;
+
+}
+
+@media only screen and (max-width: 480px){
+    .large{
+	display: none;
+    }
+    .nav{
+	display: flex !important;
+	height:42px;
+	padding:10px;
+	background:#6c18bc;
+    } 
+}
+
+
