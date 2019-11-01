@@ -1,23 +1,240 @@
 
 header{
-    height:42px;
-    position:sticky;
+    height: 42px;
+    position: fixed;
     padding: 10px;
     background: #6c18bc;
-    margin-top:0px;
+    margin-top: 0px;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    margin-right: 50px;
+    left: 0;
+    margin-left: 0;
+    outline-width:0;
 
 }
-
-@media only screen and (max-width: 480px){
-    .large{
-	display: none;
+.text-content{
+    font-size: 17px;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    margin:auto;
+}
+#nav-top{
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+#logo{
+    background: url(/images/logo.png);
+    height: 42px;
+    width: 42px;
+    background-size: 42px 42px;
+    margin-right: 5px;
+    flex: 0 0 auto;
+}
+#search{
+    flex-grow: 1;
+    border: 1px solid #313131;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: whitesmoke;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+#search-input{
+    width: 80%;
+    border: none;
+    background-color: transparent;
+}
+#search-btn{
+    border: none;
+    float: right;
+    background-color: transparent;
+} 
+#catg-h{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 10px;
+}
+#feature{
+    flex: 0 0 auto;
+    float: right;
+    margin-right: 20px;
+    margin-left: auto;
+    order: 2;
+}
+.icon-content{
+    font-size: 25px;
+    color: whitesmoke;
+    flex: 0 0 auto;
+}
+.icon-content:hover{
+    color: black;
+}
+#nav-bottom{
+    display: none;
+}
+@media only screen and (max-width: 700px){
+    #search{
+	margin-right: 20px !important;
     }
-    .nav{
+    .large{
+	display: none !important;
+    }
+    #nav-bottom{
 	display: flex !important;
-	height:42px;
+	height: 42px;
 	padding:10px;
 	background:#6c18bc;
+	align-items: center;
+	justify-content: space-around;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99999;
     } 
 }
 
+.dropdown {
+    padding:5px;
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #6c18bc;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    bottom:46px;
+    right:0;
+}
 
+/* Links inside the dropdown */
+.dropdown-content a {
+    padding: 12px 16px;
+    flex-shrink:2;
+    text-decoration: none;
+    display: flex;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .icon-content {
+    color: black;
+}
+
+.con
+{
+    border-radius:10px;
+    flex-flow:1;
+    position: relative;
+    width: 700px;
+    height: 30vw;
+    min-height: 150px;
+    overflow: hidden;
+    background: #000;
+}
+ul
+{
+    margin: 0 0 40px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+ul li
+{
+    list-style: none;
+    margin: 0 0 40px;
+}
+ul li .slide
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s;
+    transform: rotateY(90deg);
+    transform-origin: left;
+}
+ul li input[type="radio"]
+{
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    height: 1.8vw;
+    width: 1.8vw;
+}
+ul li input[type="radio"]:checked ~ .slide
+{
+    transition: transform 0.5s;
+    transform: rotateY(0deg);
+    transform-origin: right;
+}
+ul li .slide .content
+{
+    position: absolute;
+    top: 82%;
+    width: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255,255,255,.9);
+    padding: 5px;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+}
+ul li .slide .content h2
+{
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+}
+ul li .slide .content p
+{
+    font-size: 1.3vw;
+}
+ul li .silde img
+{
+    object-fit: cover;
+    position: absolute;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+}
+ul li input[type="radio"]:checked ~ .slide img
+{
+    animation: animate 40s linear infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+	transform: scale(1);
+    }
+    50%
+    {
+	transform: scale(1.5);
+    }
+    100%
+    {
+	transform: scale(1);
+    }
+}
