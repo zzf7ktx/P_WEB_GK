@@ -5,11 +5,11 @@
 	{ "src": "./routes/index.js", "use": "@now/node-server" },    
 	{ "src": "./app.js", "use": "@now/node-server" },
 	{ "src":"./public/images/**/*","use":"@now/static"},
-	{ "src":"./public/stylesheets/**/*","use":"@now/static"}
+	{ "src":"./public/stylesheets/style.css","use":"@now/static"}
     ],
     "routes": [
 	{ "src": "/", "dest": "./routes/index.js" },
 	{ "src": "/stylesheets/style.css", "dest": "./public/stylesheets/style.css" },
-	{ "src": "/images/(.*)", "dest": "./public/images/$1" }
+	{ "src": "/images/logo.png", "dest": "./public/images/logo.png" }
     ]
 }
