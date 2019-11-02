@@ -1,5 +1,32 @@
+.placement{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: #6c18bc;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: 3px;
+}
+.placement h1{
+    width: 100%;
+    flex: 0 0 auto;
+    color: rgba(255,255,255,0.8);
+}
+.placement .poster{
+    flex: 1 1 auto;
+    margin: 10px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    padding: 10px;
+}
+.placement .poster:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    transform: rotateY(9deg);
+}
 
 header{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
     height: 42px;
     position: fixed;
     padding: 10px;
@@ -15,12 +42,14 @@ header{
     z-index: 99999
 }
 .text-content{
+    text-decoration: none;
     font-size: 17px;
     color: #f1f1f1;
     text-transform: uppercase;
     margin:auto;
 }
 #nav-top{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     position: relative;
@@ -65,6 +94,12 @@ header{
     margin-right: 20px;
     margin-left: auto;
     order: 2;
+}
+.text-content:hover{
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    color: black;
+    background: whitesmoke;
 }
 .icon-content{
     font-size: 25px;
@@ -237,4 +272,61 @@ ul li input[type="radio"]:checked ~ .slide img
     {
 	transform: scale(1);
     }
+}
+
+.section-slider {
+    margin: 10px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+}
+.slider {
+    display: flex;
+    overflow-x: auto;
+    scrollbar-color: rebeccapurple whitesmoke;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+}
+.slider .card {
+    margin: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.slider .card:hover {
+    background: rgba(108, 24, 188, 0.2);
+}
+
+.slider .card .img-slider {
+    flex-shrink: 0;
+    width: 200px;
+    display: block;
+}
+.silde .card p {
+    margin-right: 10px;
+}
+.slider::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+.slider::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.slider::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+
+}
+.section-slider:hover .slider::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+.section-slider:hover .slider {
+    scrollbar-width: auto;
 }
