@@ -4,7 +4,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build": "npm build"
+    "build": "npm build",
     "start": "npm start"
   },
   "dependencies": {
