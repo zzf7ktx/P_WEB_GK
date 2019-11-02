@@ -6,6 +6,8 @@
 	{ "src": "./app.js", "use": "@now/node-server" }
     ],
     "routes": [
-	{ "src": "/", "dest": "./routes/index.js" }
+	{ "src": "/", "dest": "./routes/index.js" },
+	{ "src": "/stylesheets/style.css", "dest": "./public/stylesheets/style.css" },
+	{ "src": "/images/(.*)", "dest": "./public/images/$1" }
     ]
 }
