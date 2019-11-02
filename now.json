@@ -2,14 +2,11 @@
     "version": 2,
     "builds": [
 	{ "src": "./index.js", "use": "@now/node-server" },
-	{ "src": "./routes/index.js", "use": "@now/node-server" },    
 	{ "src": "./app.js", "use": "@now/node-server" },
-	{ "src":"./public/images/**/*","use":"@now/static"},
-	{ "src":"./public/stylesheets/style.css","use":"@now/static"}
+	{ "src": "./routes/index.js", "use": "@now/node-server" },    
+	{ "src":"./public","use":"@now/static"}
     ],
     "routes": [
-	{ "src": "/", "dest": "./routes/index.js" },
-	{ "src": "/stylesheets/style.css", "dest": "./public/stylesheets/style.css" },
-	{ "src": "/images/logo.png", "dest": "./public/images/logo.png" }
+	{ "src": "/", "dest": "./routes/index.js" }
     ]
 }
