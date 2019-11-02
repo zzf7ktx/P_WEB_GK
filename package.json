@@ -4,8 +4,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build": "npm build",
-    "start": "npm run start"
+    "build": "npm run-script build",
+    "start": "node index.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
