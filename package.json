@@ -4,8 +4,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build": "npm build"
-    "start": "npm start"
+    "build": "npm build",
+    "start": "node index.js"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -14,7 +14,6 @@
     "express-handlebars": "^3.1.0",
     "handlebars": "^4.5.1",
     "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
     "morgan": "~1.9.1"
   }
 }
