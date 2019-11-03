@@ -3,18 +3,17 @@
     "builds": [
 	{ "src": "package.json", "use": "@now/static-build"},
 	{ "src": "./index.js", "use": "@now/node-server" },
-	{ "src": "./routes/*.js", "use": "@now/node-server" },    
-	{ "src": "./app.js", "use": "@now/node-server" }
+	{ "src": "./routes/*.js", "use": "@now/node" },    
+	{ "src": "./app.js", "use": "@now/node" }
     ],
     "routes": [
-	{ "src": "/", "dest": "./routes/index.js" },
-	{ "src": "/", "dest": "./routes/login.js" },
-	{ "src": "/food", "dest": "./routes/food.js" },
-	{ "src": "/fashion", "dest": "./routes/fashion.js" },
-	{ "src": "/pet", "dest": "./routes/pet.js" },
-	{ "src": "/electronic", "dest": "./routes/electronic.js" },
-	{ "src": "/home", "dest": "./routes/home.js" },
-	{ "src": "/stationery", "dest": "./routes/stationery.js" }
-
+	{ "src": "/login", "dest": "/" },
+	{ "src": "/sports", "dest": "/" },
+	{ "src": "/food", "dest": "/" },
+	{ "src": "/fashion", "dest": "/" },
+	{ "src": "/home", "dest": "/" },
+	{ "src": "/electronic", "dest": "/" },
+	{ "src": "/stationery", "dest": "/" },
+	{ "src": "/pet", "dest": "/" }
     ]
 }

@@ -14,6 +14,7 @@ var electronicRouter = require('./routes/electronic');
 var petRouter = require('./routes/pet');
 var homeRouter = require('./routes/home');
 var stationeryRouter = require('./routes/stationery');
+var editAccRouter = require('./routes/edit_acc');
 var hbs = require('express-handlebars');
 var app = express();
 
@@ -38,6 +39,7 @@ app.use('/electronic', electronicRouter);
 app.use('/pet', petRouter);
 app.use('/home', homeRouter);
 app.use('/stationery', stationeryRouter);
+app.use('/edit_acc', stationeryRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
