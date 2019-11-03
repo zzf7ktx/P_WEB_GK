@@ -3,12 +3,18 @@
     "builds": [
 	{ "src": "package.json", "use": "@now/static-build"},
 	{ "src": "./index.js", "use": "@now/node-server" },
-	{ "src": "./routes/index.js", "use": "@now/node-server" },    
-	{ "src": "./routes/login.js", "use": "@now/node-server" },    
+	{ "src": "./routes/*.js", "use": "@now/node-server" },    
 	{ "src": "./app.js", "use": "@now/node-server" }
     ],
     "routes": [
 	{ "src": "/", "dest": "./routes/index.js" },
-	{ "src": "/login", "dest": "./routes/login.js" }
+	{ "src": "/login", "dest": "./routes/sports.js" },
+	{ "src": "/food", "dest": "./routes/food.js" },
+	{ "src": "/fashion", "dest": "./routes/fashion.js" },
+	{ "src": "/pet", "dest": "./routes/pet.js" },
+	{ "src": "/electronic", "dest": "./routes/electronic.js" },
+	{ "src": "/home", "dest": "./routes/home.js" },
+	{ "src": "/stationery", "dest": "./routes/stationery.js" }
+
     ]
 }
