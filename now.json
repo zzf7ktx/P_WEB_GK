@@ -8,7 +8,7 @@
     ],
     "routes": [
 	{ "src": "/", "dest": "./routes/index.js" },
-	{ "src": "/login", "dest": "./routes/sports.js" },
+	{ "src": "/", "dest": "./routes/login.js" },
 	{ "src": "/food", "dest": "./routes/food.js" },
 	{ "src": "/fashion", "dest": "./routes/fashion.js" },
 	{ "src": "/pet", "dest": "./routes/pet.js" },
