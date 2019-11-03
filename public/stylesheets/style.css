@@ -32,7 +32,7 @@ header{
     padding: 10px;
     background: #6c18bc;
     margin-top: 0px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     top: 0;
     width: 100%;
     margin-right: 50px;
@@ -42,6 +42,7 @@ header{
     z-index: 99999
 }
 .text-content{
+    padding: 5px;
     text-decoration: none;
     font-size: 17px;
     color: #f1f1f1;
@@ -97,7 +98,6 @@ header{
 }
 .text-content:hover{
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
-    padding: 5px;
     color: black;
     background: whitesmoke;
 }
@@ -145,7 +145,7 @@ header{
     background-color: #6c18bc;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    bottom:46px;
+   /* bottom:46px;*/
     right:0;
 }
 
