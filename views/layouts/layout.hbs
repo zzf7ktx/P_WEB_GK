@@ -29,7 +29,8 @@
 		    <a class="icon-content"><i class="fas fa-user-circle"></i></a>
 		    <div class="dropdown-content">
 			<a class="text-content" href="/login">LOGIN</a>
-			<a class="text-content" href="#">SIGNUP</a>
+			<a class="text-content" href="/login">SIGNUP</a>
+			<a class="text-content" href="/edit_acc">INFO</a>
 		    </div>
 		</div>
 		<a class="icon-content"><i class="fas fa-shopping-cart"></i></a>
@@ -38,7 +39,15 @@
     </header>
     <div id="nav-bottom"> 
 	<a class="icon-content" style="margin-right:10px;margin-left:10px" href="#"><i class="fas fa-shopping-cart"></i></a>
-	<a class="icon-content" style="margin-right:10px;margin-left:10px" href="#"><i class="fas fa-user-circle"></i></a>
+	<div class="dropdown">
+	    <a class="icon-content" style="margin-right:10px;margin-left:10px" href="#"><i class="fas fa-user-circle"></i></a>
+	    <div class="dropdown-content" style="bottom: 46px">
+		<a class="text-content" href="/login">LOGIN</a>
+		<a class="text-content" href="/login">SIGNUP</a>
+		<a class="text-content" href="/edit_acc">INFO</a>
+	    </div>
+	</div>
+
 	<a class="icon-content" style="margin-right:10px;margin-left:10px" href="#"><i class="fas fa-thumbtack"></i></a>
 	<div class="dropdown">
 	    <a class="icon-content" style="margin-right:20px;margin-left:10px"><i class="fas fa-bars"></i></a>
@@ -55,8 +64,10 @@
     </div>
     {{{ body }}}
     <footer>
-	<div> footer </div>
-	<p> ft </p>
+	<div class="placement" style="margin-top: 10px; margin-bottom: 72px"> 
+	    <h1>Power</h1> 
+	    <p>Design by WKH</p>
+	</div>
     </footer>
 </body>
 </html>

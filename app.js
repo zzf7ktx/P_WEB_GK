@@ -39,7 +39,7 @@ app.use('/electronic', electronicRouter);
 app.use('/pet', petRouter);
 app.use('/home', homeRouter);
 app.use('/stationery', stationeryRouter);
-app.use('/edit_acc', stationeryRouter);
+app.use('/edit_acc', editAccRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
