@@ -13,8 +13,10 @@ var fashionRouter = require('./routes/fashion');
 var electronicRouter = require('./routes/electronic');
 var petRouter = require('./routes/pet');
 var homeRouter = require('./routes/home');
+var detailRouter = require('./routes/detail');
 var stationeryRouter = require('./routes/stationery');
 var editAccRouter = require('./routes/edit_acc');
+var cartRouter = require('./routes/cart');
 var hbs = require('express-handlebars');
 var app = express();
 
@@ -40,6 +42,8 @@ app.use('/pet', petRouter);
 app.use('/home', homeRouter);
 app.use('/stationery', stationeryRouter);
 app.use('/edit_acc', editAccRouter);
+app.use('/detail', detailRouter);
+app.use('/cart', cartRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

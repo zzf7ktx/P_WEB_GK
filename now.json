@@ -16,5 +16,8 @@
 	{ "src": "/stationery", "dest": "/" },
 	{ "src": "/pet", "dest": "/" },
 	{ "src": "/edit_acc", "dest": "/" }
+	{ "src": "/detail", "dest": "/" },
+	{ "src": "/cart", "dest": "/" },
+	{ "src": "/order", "dest": "/" },
     ]
 }
