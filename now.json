@@ -18,6 +18,10 @@
 	{ "src": "/edit_acc", "dest": "/" },
 	{ "src": "/detail", "dest": "/" },
 	{ "src": "/cart", "dest": "/" },
+	{ "src": "/shopx", "dest": "/" },
+	{ "src": "/edit_shop", "dest": "/" },
+	{ "src": "/new_product", "dest": "/" },
+	{ "src": "/edit_product", "dest": "/" },
 	{ "src": "/order", "dest": "/" }
     ]
 }

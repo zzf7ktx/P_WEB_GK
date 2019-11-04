@@ -18,6 +18,10 @@ var stationeryRouter = require('./routes/stationery');
 var editAccRouter = require('./routes/edit_acc');
 var cartRouter = require('./routes/cart');
 var orderRouter = require('./routes/order');
+var shopxRouter = require('./routes/shopx');
+var editShopRouter = require('./routes/edit_shop');
+var editProductRouter = require('./routes/edit_product');
+var newProductRouter = require('./routes/new_product');
 var hbs = require('express-handlebars');
 var app = express();
 
@@ -46,6 +50,10 @@ app.use('/edit_acc', editAccRouter);
 app.use('/detail', detailRouter);
 app.use('/cart', cartRouter);
 app.use('/order', orderRouter);
+app.use('/shopx', shopxRouter);
+app.use('/edit_shop', editShopRouter);
+app.use('/edit_product', editProductRouter);
+app.use('/new_product', newProductRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
