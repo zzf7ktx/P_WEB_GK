@@ -22,6 +22,11 @@ var shopxRouter = require('./routes/shopx');
 var editShopRouter = require('./routes/edit_shop');
 var editProductRouter = require('./routes/edit_product');
 var newProductRouter = require('./routes/new_product');
+var editAddressRouter = require('./routes/edit_address');
+var newAddressRouter = require('./routes/new_address');
+var listAddressRouter = require('./routes/list_address');
+var listOrdersRouter = require('./routes/list_orders');
+var checkoutRouter = require('./routes/checkout');
 var hbs = require('express-handlebars');
 var app = express();
 
@@ -54,6 +59,11 @@ app.use('/shopx', shopxRouter);
 app.use('/edit_shop', editShopRouter);
 app.use('/edit_product', editProductRouter);
 app.use('/new_product', newProductRouter);
+app.use('/edit_address', editAddressRouter);
+app.use('/new_address', newAddressRouter);
+app.use('/list_address', listAddressRouter);
+app.use('/list_orders', listOrdersRouter);
+app.use('/checkout', checkoutRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

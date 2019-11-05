@@ -22,6 +22,11 @@
 	{ "src": "/edit_shop", "dest": "/" },
 	{ "src": "/new_product", "dest": "/" },
 	{ "src": "/edit_product", "dest": "/" },
+	{ "src": "/edit_address", "dest": "/" },
+	{ "src": "/new_address", "dest": "/" },
+	{ "src": "/list_address", "dest": "/" },
+	{ "src": "/list_orders", "dest": "/" },
+	{ "src": "/checkout", "dest": "/" },
 	{ "src": "/order", "dest": "/" }
     ]
 }
